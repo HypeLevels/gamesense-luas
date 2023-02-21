@@ -26,7 +26,7 @@ local paint = function(ctx)
         
         local r, g, b = math.abs(math.sin(val + 4))*255, math.abs(math.sin(val + 2))*255, math.abs(math.sin(val))*255
 
-        colour = ffi.cast("unsigned char**", ffi.new("unsigned char[4]", {r,g,b,255}))[0]
+        colour = ffi.cast("unsigned char**", ffi.new("unsigned char[4]", { r, g, b, 255}))[0]
     end
 
     local origin = vector(entity.get_origin(localplayer))
