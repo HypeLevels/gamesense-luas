@@ -4,7 +4,7 @@ local vector = require "vector" -- The holy vector library
 local master_switch = ui.new_checkbox("VISUALS", "Effects", "Enable trail")
 
 local menu = {
-    rainbow = ui.new_checkbox("VISUALS", "Effects", "Rainbow trail")
+    rainbow = ui.new_checkbox("VISUALS", "Effects", "Rainbow trail"),
     colour = ui.new_color_picker("VISUALS", "Effects", "Enable trail", 71, 182, 255, 255)
 }
 
